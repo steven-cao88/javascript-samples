@@ -4,19 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <title>Walking Man</title>
-    <link rel="stylesheet" href="walking_man.css">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="drawing_app.css">
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
 
   <body>
+    <div class="toolbar">
+      <input type="color" aria-label="select pen color">
+      <input type="range" min="2" max="50" value="30" aria-label="select pen size"><span class="output">30</span>
+      <button>Clear canvas</button>
+    </div>
+
     <canvas class="myCanvas">
       <p>Add suitable fallback here.</p>
     </canvas>
     
-    <script src="walking_man.js"></script>
+    <script src="drawing_app.js"></script>
     
   </body>
 </html>
