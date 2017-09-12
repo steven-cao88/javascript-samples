@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>YouTube APIs example</title>
+	<link rel="stylesheet" type="text/css" href="youtube.css">
+</head>
+<body>
+	<h1>YouTube video search</h1>
+	<div class="wrapper">
+		<div class="controls">
+			<form>
+				<p>
+					<label for="search">Enter a search term (required): </label>
+					<input type="text" id="search" class="search" required>
+				</p>
+				<p>
+					<button class="submit">Submit search</button>
+				</p>
+			</form>
+		</div>
+		<div class="results">
+			<section></section>
+		</div>
+	</div>
+	<!--
+      Apply both necessary API scripts to your HTML. The first is for the YouTube Data
+      API, and the second is for the YouTube Iframe Player API
+    -->
+    <script type="text/javascript" src="https://apis.google.com/js/client.js"></script>
+    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+    <script type="text/javascript" src="youtube.js"></script>
+</body>
+</html>
